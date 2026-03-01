@@ -12,6 +12,7 @@ import random
 import re
 import numpy as np
 from collections import Counter
+import sklearn
 
 # ─────────────────────────────────────────────
 # 1. DATASET GENERATION
@@ -219,4 +220,3 @@ print("\nDetailed Report:")
 print(classification_report(y_test, y_pred, target_names=["Negative","Neutral","Positive"]))
 print("Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
-
